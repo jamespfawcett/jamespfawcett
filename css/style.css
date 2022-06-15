@@ -1,0 +1,518 @@
+.nav {
+  padding: 0.5rem 1rem;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  transition: 0.5s; }
+  .nav__logoContainer {
+    height: 100%; }
+  .nav__logoLink {
+    height: 100%; }
+  .nav__logo {
+    height: 100%;
+    padding: 0.25rem; }
+  .nav__menuUl {
+    list-style-type: none;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem; }
+  .nav__menuLi {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    transition: 0.2s ease-out; }
+  .nav__menuLi:hover {
+    transform: scale(1.1) rotate(5deg);
+    transition: 0.2s ease-out;
+    text-shadow: 0px 2px 0px #ff0062; }
+
+.navScroll {
+  background: #1c005c;
+  transition: 0.5s; }
+
+.navBlue {
+  padding: 0.5rem 1rem;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  transition: 0.5s;
+  background: #1c005c; }
+
+.hero {
+  height: 90vh;
+  background: #1c005c;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .hero__text-container {
+    width: 50%;
+    font-size: 2rem; }
+  .hero__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200; }
+  .hero__textAlternate {
+    font-family: "Courier Prime", sans-serif; }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem; }
+  .projects__header {
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+    padding: 0rem 1rem 1rem 0rem; }
+  .projects__container {
+    padding-top: 15vh;
+    padding-bottom: 3rem; }
+
+.project {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: 0.1s;
+  outline: 1px solid #d1d1d1;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
+  .project__imageContainer {
+    height: 250px; }
+  .project__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .project__titleContainer {
+    padding: 0.5rem; }
+  .project__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 500; }
+
+.project:hover {
+  transform: scale(1.05);
+  transition: 0.1s; }
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem 2rem;
+  padding: 2rem 0 5rem 0; }
+  .about__container {
+    padding: 5rem 0rem 5rem 0rem; }
+  .about__header {
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+    padding: 0rem 1rem 1rem 0rem; }
+  .about__titleText {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+    padding: 1rem 1rem 1rem 0rem; }
+  .about__content {
+    grid-column: 2/4;
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 1rem; }
+  .about__contentText {
+    margin: 0; }
+  .about__contact {
+    font-family: "Courier Prime", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: #1c005c;
+    transition: all 0.5s ease 0s; }
+  .about__contact:hover {
+    transition: all 0.5s ease 0s;
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+    transform: translateY(-3px);
+    width: 300px;
+    box-shadow: 0 -5px 0 #ff0062;
+    border-radius: 0%; }
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem 2rem;
+  padding: 5rem 0; }
+  .skills__title {
+    width: 40%; }
+  .skills__titleText {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+    padding: 1rem 1rem 1rem 0rem; }
+  .skills__logos {
+    padding: 1rem 1rem 1rem 0rem;
+    display: grid;
+    grid-column: 2/4;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem; }
+  .skills__logo {
+    max-width: 100%;
+    max-height: 100px; }
+  .skills__logo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+
+.contact {
+  padding-bottom: 4rem; }
+  .contact__header {
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+    padding: 0rem 1rem 1rem 0rem; }
+  .contact__content {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .contact__wrapper {
+    width: 100%; }
+  .contact__form {
+    padding: 1rem 2rem;
+    background: #fff;
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 5px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    animation: bounce 1.5s infinite; }
+  .contact__title {
+    display: block;
+    font-family: "Courier Prime", sans-serif, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px auto 5px;
+    width: 300px; }
+  .contact__name {
+    background-color: #ebebeb;
+    color: white;
+    padding: 1rem;
+    font-family: "Courier Prime", sans-serif, "sans-serif"; }
+  .contact__name:hover {
+    box-shadow: 0 -5px 0 #ff0062;
+    transform: scale(1.05);
+    transition: ease 0.5s; }
+  .contact__email {
+    padding: 1rem;
+    background-color: #ebebeb;
+    font-family: "Courier Prime", sans-serif, "sans-serif"; }
+  .contact__email:hover {
+    box-shadow: 0 -5px 0 #ff0062;
+    transform: scale(1.05);
+    transition: ease 0.5s; }
+  .contact__message {
+    font-family: "Courier Prime", sans-serif, "sans-serif";
+    background-color: #ebebeb;
+    overflow: hidden;
+    height: 10rem; }
+  .contact__message:hover {
+    box-shadow: 0 -5px 0 #ff0062;
+    transform: scale(1.05);
+    transition: ease 0.5s; }
+  .contact__formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+    color: #1c005c; }
+  .contact__formEntry:focus-visible {
+    outline: none; }
+  .contact__submit {
+    width: 200px;
+    color: white;
+    background-color: #1c005c;
+    font-size: 1.2rem;
+    font-family: "Courier Prime", sans-serif;
+    cursor: pointer; }
+  .contact__submit:hover {
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+    transform: translateY(-3px);
+    width: 300px;
+    box-shadow: 0 -5px 0 #ff0062;
+    border-radius: 0%; }
+  .contact__formStatus {
+    display: none;
+    width: 200px;
+    color: #3f3f3f;
+    background-color: #d1d1d1;
+    font-size: 1.2rem;
+    font-family: "Courier Prime", sans-serif;
+    cursor: pointer;
+    text-align: center;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s; }
+
+::-webkit-focus-ring-color {
+  outline: red; }
+
+::-webkit-input-placeholder {
+  font-size: 1.3em; }
+
+@keyframes bounce {
+  50% {
+    transform: translate(0, 8px); } }
+.footer {
+  padding: 0rem 3rem;
+  background: #1c005c;
+  min-height: 33vH;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center; }
+  .footer__left {
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+  .footer__middle {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column; }
+  .footer__right {
+    padding: 1rem; }
+  .footer__backToTop {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1rem; }
+  .footer__logo {
+    height: 3rem; }
+  .footer__menuLi {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem;
+    list-style-type: none;
+    text-align: right; }
+  .footer__menuLi:hover {
+    transition: 0.2s ease-out;
+    text-shadow: 0px 2px 0px #ff0062; }
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: auto; }
+
+.particles {
+  height: 100vh;
+  position: relative;
+  background-color: #1c005c;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .particles__text-container {
+    width: 60%;
+    font-size: 2rem;
+    color: white;
+    z-index: 10;
+    pointer-events: none; }
+  .particles__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200; }
+  .particles__textAlternate {
+    font-family: "Courier Prime", sans-serif;
+    font-weight: 900;
+    background: #ff0062;
+    color: #1c005c; }
+  .particles .particles__line4 {
+    margin-top: 4rem; }
+  .particles__cta {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background: #ff0062;
+    color: #1c005c;
+    border: 2px solid #ff0062;
+    padding: 0.5rem 1rem; }
+
+.singleProject {
+  height: auto;
+  display: flex;
+  flex-direction: column; }
+  .singleProject__container {
+    min-height: 80vh;
+    padding-top: 2rem; }
+  .singleProject__top {
+    height: 60vh; }
+  .singleProject__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 0rem 1rem 1rem 0rem; }
+  .singleProject__body {
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300; }
+  .singleProject__gallery {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.projectModal {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: white; }
+  .projectModal__topBar {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem; }
+  .projectModal__body {
+    padding: 2rem 3rem;
+    width: 70%;
+    margin: 0 auto; }
+  .projectModal__gallery {
+    width: 100%;
+    height: 75vh;
+    position: relative; }
+  .projectModal__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .projectModal__slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    list-style-type: none;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms; }
+  .projectModal__slide[data-active] {
+    opacity: 1;
+    z-index: 2;
+    transition-delay: 0ms; }
+  .projectModal__galleryButton {
+    position: absolute;
+    background: none;
+    z-index: 5;
+    border: none;
+    font-size: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, 0.1); }
+  .projectModal__galleryButton:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2); }
+  .projectModal__galleryButton:active {
+    background-color: rgba(0, 0, 0, 0.4); }
+  .projectModal__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 0rem 1rem 1rem 0rem;
+    padding-top: 2rem; }
+  .projectModal__description {
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300; }
+  .projectModal__close {
+    font-size: 2rem;
+    cursor: pointer; }
+
+.prev {
+  left: 1rem; }
+
+.next {
+  right: 1rem; }
+
+.projectsHome {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem; }
+  .projectsHome__header {
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+    padding: 0rem 1rem 1rem 0rem; }
+  .projectsHome__container {
+    padding-top: 4rem; }
+
+.projectHome {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: 0.1s; }
+  .projectHome__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .projectHome__1 {
+    background: red; }
+  .projectHome__2 {
+    background: violet; }
+
+.projectHome:hover {
+  transform: scale(1.05);
+  transition: 0.1s; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+html {
+  scroll-behavior: smooth; }
+
+.pageContainer {
+  width: 70%;
+  margin: 0 auto; }
+
+.singleProject__container {
+  min-height: 80vh; }
+
+.navPlaceholder {
+  width: 100%;
+  height: 10vh;
+  background: green; }
+
+/*# sourceMappingURL=style.css.map */

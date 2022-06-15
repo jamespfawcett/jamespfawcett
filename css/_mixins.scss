@@ -1,0 +1,40 @@
+// MIXINS FILE
+
+
+// Typeface Mixins
+
+@mixin subheading {
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+    padding: 0rem 1rem 1rem 0rem;
+}
+
+@mixin bigheading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+    padding: 1rem 1rem 1rem 0rem;
+}
+
+@mixin projecttitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 0rem 1rem 1rem 0rem;
+}
+
+@mixin body {
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+@mixin nav {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem;
+    list-style-type: none;
+}

@@ -1,0 +1,39 @@
+// IMPORTS
+@import 'nav';
+@import 'hero';
+@import 'projects';
+@import 'about';
+@import 'contact';
+@import 'footer';
+@import 'var';
+@import 'mixins';
+@import 'particles';
+@import 'singleProject';
+@import 'projectModal';
+@import 'projectsHome';
+
+// RESETS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.pageContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.singleProject__container{
+    min-height: 80vh;
+}
+.navPlaceholder{
+    width: 100%;
+    height: 10vh;
+    background: green;
+}

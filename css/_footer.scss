@@ -1,0 +1,46 @@
+@import 'var';
+@import 'mixins';
+
+.footer{
+    padding: 0rem 3rem;
+    background: $blue;
+    min-height: 33vH;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    &__left{
+        height: 100%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__middle{
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__right{
+        padding: 1rem;
+    }
+    &__backToTop{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 1rem;
+    }
+    &__logo{
+        height: 3rem;
+    }
+    &__menuLi{
+        @include nav;
+        text-align: right;
+    }
+    &__menuLi:hover{
+        // transform: scale(1.1) rotate(5deg);
+        transition: 0.2s ease-out;
+        text-shadow: 0px 2px 0px $pink;
+    }
+}

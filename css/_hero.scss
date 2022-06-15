@@ -1,0 +1,26 @@
+@import 'var';
+
+.hero{
+    height: 90vh;
+    // background: #f3f3f3;
+    background: #1c005c;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // font-family: $primary-font;
+
+    &__text-container{
+        width: 50%;
+        font-size: 2rem;
+    }
+    &__text{
+        font-family: $primary-font;
+        font-weight: 200;
+    }
+    &__textAlternate{
+        font-family: $secondary-font;
+    }
+}
+
+

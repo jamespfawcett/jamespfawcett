@@ -1,0 +1,129 @@
+.contact{
+    padding-bottom: 4rem;
+    &__header{
+        @include subheading;
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__wrapper{
+        width: 100%;
+      }
+    &__form {
+        padding: 1rem 2rem;
+        background: #fff;
+        box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+        border-radius: 5px;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        animation: bounce 1.5s infinite;
+      }
+      &__title{
+        display: block;
+        font-family: $secondary-font, sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 10px auto 5px;
+        width: 300px;
+      }
+      &__name {
+        background-color: #ebebeb;
+        color: white;
+        padding: 1rem;
+        font-family: $secondary-font, 'sans-serif';
+      }
+      &__name:hover {
+        box-shadow: 0 -5px 0 $pink;
+        transform: scale(1.05);
+        transition: ease 0.5s;
+      }
+      
+      &__email {
+        padding: 1rem;
+        background-color: #ebebeb;
+        font-family: $secondary-font, 'sans-serif';
+      }
+      
+      &__email:hover {
+        box-shadow: 0 -5px 0 $pink;
+        transform: scale(1.05);
+        transition: ease 0.5s;
+      }
+      
+      &__message {
+        font-family: $secondary-font, 'sans-serif';
+        background-color: #ebebeb;
+        overflow: hidden;
+        height: 10rem;
+      }
+      
+      &__message:hover {
+        box-shadow: 0 -5px 0 $pink;
+        transform: scale(1.05);
+        transition: ease 0.5s;
+      }
+      
+      &__formEntry {
+        display: block;
+        margin: 30px auto;
+        min-width: 300px;
+        padding: 10px;
+        border-radius: 2px;
+        border: none;
+        transition: all 0.5s ease 0s;
+        color: $blue;
+      }
+      &__formEntry:focus-visible{
+        outline: none;
+      }
+      &__submit {
+        width: 200px;
+        color: white;
+        background-color: $blue;
+        font-size: 1.2rem;
+        font-family: $secondary-font;
+        cursor: pointer;
+      }
+      
+      &__submit:hover {
+        box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+        transform: translateY(-3px);
+        width: 300px;
+        box-shadow: 0 -5px 0 $pink;
+        border-radius: 0%;
+      }
+      &__formStatus{
+        display: none;
+        width: 200px;
+        color: rgb(63, 63, 63);
+        background-color: rgb(209, 209, 209);
+        font-size: 1.2rem;
+        font-family: $secondary-font;
+        cursor: pointer;
+        
+        text-align: center;
+        margin: 30px auto;
+        min-width: 300px;
+        padding: 10px;
+        border-radius: 2px;
+        border: none;
+        transition: all 0.5s ease 0s;
+      }
+
+}
+::-webkit-focus-ring-color{
+    outline: red;
+}
+::-webkit-input-placeholder {
+font-size: 1.3em;
+}
+ 
+@keyframes bounce {
+50% {
+    transform: translate(0, 8px);
+}
+}

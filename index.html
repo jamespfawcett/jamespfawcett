@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Fawcett</title>
+    <link rel="icon" type="image/x-icon" href="/img/jflogo.png">
+    
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/62e0111851.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- SCRIPT -->
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+
+     <!-- HERO SECTION -->
+    <div class="particles">
+        <nav id="nav" class="nav">
+            <div class="nav__logoContainer">
+                <a class="nav__logoLink" href=""><img class="nav__logo" src="./img/JF logo White Transparent.svg" alt=""></a>
+            </div>
+            <div class="nav__menu-container">
+                <ul class="nav__menuUl">
+                    <a href="index.html"><li class="nav__menuLi">Home</li></a>
+                    <a href="#projectsHomeContainer"><li class="nav__menuLi">Projects</li></a>
+                    <a href="#about"><li class="nav__menuLi">About</li></a>
+                    <!-- <a href="#contact"><li class="nav__menuLi">Contact</li></a> -->
+                </ul>
+            </div>
+        </nav>
+        <div id="particles-js"></div>
+        <!-- <h1>Background particles</h1> -->
+        <div class="particles__text-container">
+            <div class="particles__line1"><h1 class="particles__text">Hello, I'm <span class="particles__textAlternate">James</span> and</h1></div>
+            <div class="particles__line2"><h1 class="particles__text">I'm a <span class="particles__textAlternate">Web & UX Designer</span></h1></div>
+            <div class="particles__line3"><h1 class="particles__text">based in <span class="particles__textAlternate">Wellington;</span></h1></div>
+           
+        </div>
+    </div>    
+
+    <section class="pageContainer">
+
+
+        <!-- PROJECTS SECTION -->
+
+        <div id="projectsHomeContainer" class="projectsHome__container">
+            <div class="projectsHome__header">
+                <h2>my projects;</h2>
+            </div>
+            <div id="projectsHome" class="projectsHome">
+                <div id="modalBtn" class="projectHome projectHome__1">
+                    <img class="projectHome__img" src="./img/openfolio mockup.png" alt="">
+                </div>
+                <div class="projectHome projectHome__2">
+                    <img class="projectHome__img" src="./img/jflogo.png" alt="">
+                </div>
+                <div class="projectHome projectHome__3">
+                    <img class="projectHome__img" src="./img/jflogo.png" alt="">
+                </div>
+                <div class="projectHome projectHome__4">
+                    <img class="projectHome__img" src="./img/jflogo.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ABOUT SECTION -->
+
+        <div id="about" class="about__container">
+            <div class="about__header">
+                <!-- <h2>about;</h2> -->
+            </div>
+            <div class="about">
+                <div class="about__title">
+                    <h2 class="about__titleText">ABOUT</h2>
+                </div>
+                <div class="about__content">
+                    <p class="about__contentText">Web and User Experience Design is my passion. It's the perfect combination, allowing me to fuse together my problem-solving skills and let my creative side loose.<br>
+                    <br>
+                    I am originally from the south of England but moved to beautiful New Zealand when I was fourteen, and now call Wellington home.</p>
+                    <br>
+                    <br>
+                    <a class="about__contact" href="#contact">Let's create together</a>
+                </div>
+            </div>
+
+            <div class="skills">
+                <!-- SKILLS -->
+                <div class="skills__title">
+                    <h2 class="skills__titleText">KEY SKILLS</h2>
+                </div>
+
+                <div class="skills__logos">
+                    <div class="skills__logo">
+                        <img src="./img/tools/html5logo.png" alt="">
+                    </div>
+                    <div class="skills__logo">
+                        <img src="./img/tools/csslogo.png" alt="">
+                    </div>
+                    <div class="skills__logo">
+                        <img src="./img/tools/jslogo.png" alt="">
+                    </div>
+                    <div class="skills__logo">
+                        <img src="./img/tools/sasslogo.png" alt="">
+                    </div>
+                    <div class="skills__logo">
+                        <img src="./img/tools/jquerylogo.png" alt="">
+                    </div>
+                    <div class="skills__logo">
+                        <img src="./img/tools/bootstraplogo.png" alt="">
+                    </div>
+                    <div class="skills__logo">
+                        <img src="./img/tools/figmalogo.png" alt="">
+                    </div>
+                    <div class="skills__logo">
+                        <img src="./img/tools/webflowlogo.png" alt="">
+                    </div>
+                    <div class="skills__logo">
+                        <img src="./img/tools/wordpresslogo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CONTACT SECTION -->
+
+        <div id="contact" class="contact">
+            <div class="contact__header">
+                <!-- <h2>contact;</h2> -->
+            </div>
+            <div class="contact__content">
+                <div class="contact__wrapper">
+                    <form id="contactForm" action="https://formspree.io/f/xrgjddeg" method="POST" class="contact__form">
+                      <div class="contact__title">Get in touch</div>
+                      <input type="text" id="name" name="name" class="contact__name contact__formEntry" placeholder="Name" />
+                      <input type="email" id="email" name="email" class="contact__email contact__formEntry" placeholder="Email"/>
+                      <textarea name="message" id="message" class="contact__message contact__formEntry" placeholder="Message"></textarea>
+                      <br>
+                      <button class="contact__submit contact__formEntry" onclick="thanks()">Submit</button>
+                      <p id="my-form-status" class="contact__formStatus"></p>
+                    </form>
+                  </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <div id="projectModal" class="projectModal">
+        <div class="projectModal__content">
+            <div class="projectModal__topBar">
+                <span id="closeBtn" class="projectModal__close">&times;</span>
+            </div>
+            <div class="projectModal__body">
+                <div class="projectModal__gallery">
+                    
+                    <ul data-slides>
+                        <li class="slide" data-active><img class="projectModal__img" src="./img/openfolio mockup.png" alt=""></li>
+                        <li class="slide"><img class="projectModal__img" src="./img/jflogo.png" alt=""></li>
+                        <li class="slide"><img class="projectModal__img" src="./img/openfolio mockup.png" alt=""></li>
+                    </ul>
+                    
+                </div>
+                
+                <h1 class="projectModal__title">project 1</h1>
+
+                <p class="projectModal__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam tempora et sit labore animi omnis autem dolorem ea soluta beatae necessitatibus molestiae ipsam, inventore placeat voluptatibus! Neque facere dolore qui?</p>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="footer__left">
+            <img class="footer__logo" src="./img/JF logo White Transparent.svg" alt="">
+        </div>
+        <div class="footer__middle">
+            <a class="footer__backToTop" href="#">Back to top</a>
+        </div>
+        <div class="footer__right">
+            <div class="footer__menu-container">
+                <ul class="footer__menuUl">
+                    <a href="index.html"><li class="footer__menuLi">Home</li></a>
+                    <a href="#projectsHomeContainer"><li class="footer__menuLi">Projects</li></a>
+                    <a href="#about"><li class="footer__menuLi">About</li></a>
+                    <!-- <a href="#contact"><li class="footer__menuLi">Contact</li></a> -->
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

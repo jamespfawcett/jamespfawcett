@@ -1,0 +1,91 @@
+.projectModal{
+    display: none;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: white;
+
+    &__topBar{
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0.5rem 1rem;
+    }
+    &__body{
+        padding: 2rem 3rem;
+        width: 70%;
+        margin: 0 auto;
+    }
+    // IMAGE CAROUSEL
+    &__gallery{
+        width: 100%;
+        height: 75vh;
+        position: relative;
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__slide{
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        list-style-type: none;
+        transition: 200ms opacity ease-in-out;
+        transition-delay: 200ms;
+    }
+    &__slide[data-active]{
+        opacity: 1;
+        z-index: 2;
+        transition-delay: 0ms;
+    }
+    &__galleryButton{
+        position: absolute;
+        background: none;
+        z-index: 5;
+        border: none;
+        font-size: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: white;
+        border-radius: .25rem;
+        padding: 0 .5rem;
+        background-color: rgba(0,0,0,0.1)
+    }
+    &__galleryButton:hover{
+        color: white;
+        background-color: rgba(0,0,0,0.2);
+    }
+    &__galleryButton:active{
+        background-color: rgba(0,0,0,0.4)
+    }
+    
+    // TEXT
+    &__title{
+        @include projecttitle;
+        padding-top: 2rem
+    }
+    &__description{
+        @include body;
+    }
+    &__close{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+.prev{
+    left: 1rem;
+}
+
+.next{
+    right: 1rem;
+}
