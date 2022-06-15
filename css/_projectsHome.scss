@@ -12,6 +12,12 @@
     &__container{
         padding-top: 4rem;
     }
+    &__anchor{
+        display: block;
+        position: relative;
+        top: -100px;
+        visibility: hidden;
+    }
 }
 
 .projectHome{
@@ -31,6 +37,7 @@
     &__2{
         background: violet;
     }
+    
 }
 .projectHome:hover{
     transform: scale(1.05);

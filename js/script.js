@@ -41,17 +41,34 @@ let projects = [
     {
         id: 4,
         title: 'Libby Beattie Interior Design',
-        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate non voluptates dolore, explicabo adipisci sequi aliquam consequuntur ad nemo excepturi sed nam asperiores eos quam cum eaque quia! Odio, saepe.',
+        description: 'This project is a redesign of an Interior Design Studio website. Given the target audience and desired feel of the site, I undertook UX research to inform how best to achieve this. The site has been designed to reinforce that the studio is classy and reputable, but is also approachable and has tons of character and design expertise. The main focus is on showcasing the amazing work they do, which is why images are always at the forefront of the design.<br><br>This was built as a custom Wordpress theme, including front-end client customisation features for future-proofing and easy updating.',
         img: [
             {img1: './img/lb-responsive2.png'},
             {img1: './img/lb-home2mockup.png'},
             {img1: './img/lb-projectsMockup.png'},
             {img1: './img/lb-projectMockup.png'}
         ],
-        tag: 'Web'
+        tag: 'Web',
+        link: 'https://james.fawcett.yoobeestudent.net/libbybeattie/'
     }
     
 ];
+
+// =================================
+// RESPONSIVE NAVBAR
+// =================================
+
+function responsiveNav() {
+    console.log('clicked')
+    let nav = document.getElementById("responsive-nav");
+    nav.classList.toggle('hide');
+    nav.classList.toggle('show');
+}
+
+let hamburger = document.getElementById('hamburger');
+hamburger.addEventListener('click', responsiveNav);
+
+
 
 // =================================
 // GENERATE CARDS - Projects Page
@@ -80,14 +97,11 @@ function generateCards(){
         card.addEventListener('click', function(e) {
             let id = e.target.parentNode.id;
             for(i = 0; i < projects.length; i++){
-                if(parseInt(this.id) === projects[i].id){
-                    console.log(projects[i]);
-
+                if(parseInt(this.id) === projects[i].id){        
                    
-                    
                     openModal();
 
-                    $('#projectModal').innerHTML == '';
+                    // $('#projectModal').innerHTML == '';
                     $('#projectModal').empty().append(
                         `
                         <div class="projectModal__content">
@@ -108,7 +122,7 @@ function generateCards(){
                                 
                                 <h1 class="projectModal__title">${projects[i].title}</h1>
                                 <i class="fa-solid fa-circle-arrow-right"></i>
-                                <p class="projectModal__description">${projects[i].description}</p>
+                                <p class="projectModal__description">${projects[i].description}<br><br><a href='${projects[i].link}' target="_blank">Link</a></p>
                                 
                             </div>
                             
@@ -116,6 +130,13 @@ function generateCards(){
     
                         `
                     ) 
+
+                    console.log(document.querySelector('.projectModal__link'));
+                    // document.getElementById('projectLink').append(
+                    //     `
+                    //     <a href='${projects[i].link}'>Link</a>
+                    //     `
+                    //    );
 
 
                     projects[i].img.forEach(element => {
@@ -130,12 +151,9 @@ function generateCards(){
                         liItem.appendChild(newImage);
 
                         document.getElementById('pictures').append(liItem);
-                        
-                        console.log(liItem);
 
                     });
-
-                    console.log( document.getElementById('pictures').firstElementChild);
+;
                     document.getElementById('pictures').firstElementChild.setAttribute('data-active', 'true')
 
                     

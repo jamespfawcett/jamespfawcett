@@ -13,6 +13,9 @@
     @media #{$mobile}{
         display: block;
     }
+    @media #{$mobile-lg}{
+        display: block;
+    }
 
     &__container{
         padding: 5rem 0rem 5rem 0rem;
@@ -32,6 +35,9 @@
         margin: 0;
         padding: 1rem;
         @media #{$tablet}{
+            padding: 1rem 0;
+        }
+        @media #{$mobile-lg}{
             padding: 1rem 0;
         }
         @media #{$mobile}{
@@ -73,9 +79,13 @@
     @media #{$tablet}{
         display: block;
     }
+    @media #{$mobile-lg}{
+        display: block;
+    }
     @media #{$mobile}{
         display: block;
     }
+    
 
     &__title{
         width: 40%;
@@ -92,6 +102,10 @@
         grid-gap: 2rem;
         @media #{$tablet}{
             grid-template-columns: repeat(3, 1fr);
+            padding: 1rem 0;
+        }
+        @media #{$mobile-lg}{
+            grid-template-columns: repeat(2, 1fr);
             padding: 1rem 0;
         }
         @media #{$mobile}{

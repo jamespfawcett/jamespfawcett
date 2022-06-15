@@ -18,8 +18,7 @@
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <!-- SCRIPT -->
-    <script defer src="./js/script.js"></script>
+    
 </head>
 <body>
 
@@ -32,9 +31,19 @@
             <div class="nav__menu-container">
                 <ul class="nav__menuUl">
                     <a href="index.html"><li class="nav__menuLi">Home</li></a>
-                    <a href="#projectsHomeContainer"><li class="nav__menuLi">Projects</li></a>
+                    <a href="#projects-anchor"><li class="nav__menuLi">Projects</li></a>
                     <a href="#about"><li class="nav__menuLi">About</li></a>
-                    <!-- <a href="#contact"><li class="nav__menuLi">Contact</li></a> -->
+                    <a href="#contact-anchor"><li class="nav__menuLi">Contact</li></a>
+                </ul>
+            </div>
+            <div class="navMob">
+                <a id="hamburger" href="javascript:void(0);">
+                <img class="navMob__hamburger" src="./img/bars-solid.svg" alt=""></a>
+                <ul id="responsive-nav" class="navMob__menuUl hide">
+                    <a href="index.html"><li class="navMob__menuLi">Home</li></a>
+                    <a href="#projects-anchor"><li class="navMob__menuLi">Projects</li></a>
+                    <a href="#about"><li class="navMob__menuLi">About</li></a>
+                    <a href="#contact-anchor"><li class="navMob__menuLi">Contact</li></a>
                 </ul>
             </div>
         </nav>
@@ -46,7 +55,24 @@
                 <div class="particles__line2"><h1 class="particles__text">I'm a <span class="particles__textAlternate">Web & UX Designer</span></h1></div>
                 <div class="particles__line3"><h1 class="particles__text">based in <span class="particles__textAlternate">Wellington;</span></h1></div>
             </div>
+
+            <div class="particles__text-wrapperMob">
+                <div class="line"><h2 class="particles__line particles__textMob">Hello, I'm</h2></div>
+
+                <div class="line"><span class="particles__line particles__textAlternateMob">James</span></div>
+
+                <div class="line"><h2 class="particles__line particles__textMob">and I'm a</h2></div>
+
+                <div class="line"><span class="particles__line particles__textAlternateMob">Web & UX</span></div>
+
+                <div class="line"><span class="particles__line particles__textAlternateMob">Designer</span></div>
+
+                <div class="line"><h2 class="particles__line particles__textMob">based in</h2></div>
+
+                <div class="line"><span class="particles__line particles__textAlternateMob">Wellington;</span></div>
+            </div>
         </div>
+        
     </div>    
 
     <section class="pageContainer">
@@ -56,6 +82,7 @@
 
         <div id="projectsHomeContainer" class="projectsHome__container">
             <div class="projectsHome__header">
+                <a class="projectsHome__anchor" id="projects-anchor"></a>
                 <h2>my projects;</h2>
             </div>
             <div id="projectsHome" class="projectsHome">
@@ -80,7 +107,7 @@
                     I am originally from the south of England but moved to beautiful New Zealand when I was fourteen, and now call Wellington home.</p>
                     <br>
                     <br>
-                    <a class="about__contact" href="#contact">Let's create together</a>
+                    <a class="about__contact" href="#contact-anchor">Let's create together</a>
                 </div>
             </div>
 
@@ -127,7 +154,7 @@
 
         <div id="contact" class="contact">
             <div class="contact__header">
-                <!-- <h2>contact;</h2> -->
+                <a class="contact__anchor" id="contact-anchor"></a>
             </div>
             <div class="contact__content">
                 <div class="contact__wrapper">
@@ -203,6 +230,9 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
+
+    <!-- SCRIPT -->
+    <script defer src="./js/script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>

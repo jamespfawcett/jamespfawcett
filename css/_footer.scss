@@ -9,6 +9,11 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     align-items: center;
+    @media #{$mobile}{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 2rem 0;
+    }
     &__left{
         height: 100%;
         padding: 1rem;
@@ -27,9 +32,16 @@
         padding: 1rem;
     }
     &__backToTop{
-        font-family: 'Roboto', sans-serif;
+        font-family: $primary-font;
+        font-size: 1.2rem;
         color: white;
-        font-size: 1rem;
+        font-weight: 700;
+        padding: 0.5rem 1rem;
+    }
+    &__backToTop:hover{
+        transform: scale(1.1) rotate(5deg);
+        transition: 0.2s ease-out;
+        text-shadow: 0px 2px 0px $pink;
     }
     &__logo{
         height: 3rem;
@@ -37,6 +49,9 @@
     &__menuLi{
         @include nav;
         text-align: right;
+        @media #{$mobile}{
+            text-align: center;
+        }
     }
     &__menuLi:hover{
         // transform: scale(1.1) rotate(5deg);

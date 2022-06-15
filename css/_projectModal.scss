@@ -14,7 +14,8 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        padding: 0.5rem 1rem;
+        padding: .5rem 1rem;
+        margin-top: 0.5rem;
     }
     &__body{
         padding: 2rem 3rem;
@@ -91,7 +92,7 @@
         @include body;
     }
     &__close{
-        font-size: 2rem;
+        font-size: 4rem;
         cursor: pointer;
     }
 }
