@@ -9,6 +9,11 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     align-items: center;
+    @media #{$mobile-lg}{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 2rem 0;
+    }
     @media #{$mobile}{
         display: flex;
         flex-direction: column-reverse;
@@ -49,6 +54,10 @@
     &__menuLi{
         @include nav;
         text-align: right;
+        @media #{$mobile-lg}{
+            font-size: 1.7rem;
+            text-align: center;
+        }
         @media #{$mobile}{
             text-align: center;
         }
