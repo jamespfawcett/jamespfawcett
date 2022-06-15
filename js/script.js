@@ -101,7 +101,7 @@ function generateCards(){
                    
                     openModal();
 
-                    // $('#projectModal').innerHTML == '';
+                    $('#projectModal').innerHTML == '';
                     $('#projectModal').empty().append(
                         `
                         <div class="projectModal__content">
