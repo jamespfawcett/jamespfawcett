@@ -1,3 +1,5 @@
+@import 'var';
+
 #particles-js {
     position: absolute;
     width: 100%;
@@ -21,6 +23,20 @@
         color: white;
         z-index: 10;
         pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media #{$desktop}{
+            width:80%;
+        }
+        @media #{$tablet}{
+            width:90%;
+            font-size: 1.8rem;
+        }
+        @media #{$mobile}{
+            width: 95%;
+            font-size: 1.9rem;
+        }
     }
     &__text{
         font-family: $primary-font;
@@ -32,7 +48,7 @@
         background: #ff0062;
         color: #1c005c;
     }
-    .particles__line4{
+    &__line4{
         margin-top: 4rem;
     }
     &__cta{
@@ -45,4 +61,5 @@
         border: 2px solid rgb(255, 0, 98);
         padding: 0.5rem 1rem;
     }
+    
   }

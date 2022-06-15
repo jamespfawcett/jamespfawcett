@@ -27,6 +27,12 @@ html{
 .pageContainer{
     width: 70%;
     margin: 0 auto;
+    @media #{$tablet}{
+        width: 80%;
+    }
+    @media #{$mobile}{
+        width: 90%;
+    }
 }
 
 .singleProject__container{

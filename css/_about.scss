@@ -7,6 +7,13 @@
     grid-gap: 6rem 2rem;
     padding: 2rem 0 5rem 0;
 
+    @media #{$tablet}{
+        display: block;
+    }
+    @media #{$mobile}{
+        display: block;
+    }
+
     &__container{
         padding: 5rem 0rem 5rem 0rem;
     }
@@ -24,6 +31,12 @@
         @include body;
         margin: 0;
         padding: 1rem;
+        @media #{$tablet}{
+            padding: 1rem 0;
+        }
+        @media #{$mobile}{
+            padding: 1rem 0;
+        }
     }
     &__contentText{
         margin: 0;
@@ -37,6 +50,9 @@
         padding: 0.5rem 1rem;
         background-color: $blue;
         transition: all 0.5s ease 0s;
+        @media #{$mobile}{
+            font-size: 1.5rem;
+        }
     }
     &__contact:hover{
         transition: all 0.5s ease 0s;
@@ -54,6 +70,13 @@
     grid-gap: 6rem 2rem;
     padding: 5rem 0;
 
+    @media #{$tablet}{
+        display: block;
+    }
+    @media #{$mobile}{
+        display: block;
+    }
+
     &__title{
         width: 40%;
     }
@@ -67,6 +90,14 @@
         grid-column: 2/4;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
+        @media #{$tablet}{
+            grid-template-columns: repeat(3, 1fr);
+            padding: 1rem 0;
+        }
+        @media #{$mobile}{
+            grid-template-columns: repeat(2, 1fr);
+            padding: 1rem 0;
+        }
     }
     &__logo{
         max-width: 100%;

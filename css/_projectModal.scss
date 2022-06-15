@@ -20,12 +20,26 @@
         padding: 2rem 3rem;
         width: 70%;
         margin: 0 auto;
+        @media #{$tablet}{
+            width: 90%;
+            padding: 2rem 0rem;
+        }
+        @media #{$mobile}{
+            width: 90%;
+            padding: 2rem 0rem;
+        }
     }
     // IMAGE CAROUSEL
     &__gallery{
         width: 100%;
         height: 75vh;
         position: relative;
+        @media #{$tablet}{
+            height: 50vh;
+        }
+        @media #{$mobile}{
+            height: 33vh;
+        }
     }
     &__img{
         display: block;

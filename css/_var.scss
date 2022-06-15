@@ -1,3 +1,4 @@
+// Type
 $primary-font: 'Roboto', sans-serif;
 $secondary-font: 'Courier Prime', sans-serif;
 
@@ -5,3 +6,10 @@ $secondary-font: 'Courier Prime', sans-serif;
 
 $blue: #1c005c;
 $pink: #ff0062;
+
+// Media Queries
+
+$desktop-lg: '(min-width: 1350px)';
+$desktop: '(min-width: 1100px) and (max-width:1349px)';
+$tablet: '(min-width: 750px) and (max-width:1099px)';
+$mobile: '(min-width: 1px) and (max-width:749px)';
