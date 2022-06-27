@@ -5,7 +5,7 @@ let projects = [
     {
         id: 1,
         title: 'Openfolio',
-        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate non voluptates dolore, explicabo adipisci sequi aliquam consequuntur ad nemo excepturi sed nam asperiores eos quam cum eaque quia! Odio, saepe.',
+        description: 'Openfolio is an open source platform to showcase student design work. The minimalist design helps the work take the center stage. Users can add projects which are then stored on an external database. These are then all shown on the homepage in a responsive grid layout. Users also have the ability to edit and delete projects directly from the site.',
         img: [
             {img1: './img/openfolio-mockup.png'},
             {img1: './img/openfolio-main.png'},
@@ -16,7 +16,7 @@ let projects = [
     {
         id: 2,
         title: 'Preloved',
-        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate non voluptates dolore, explicabo adipisci sequi aliquam consequuntur ad nemo excepturi sed nam asperiores eos quam cum eaque quia! Odio, saepe.',
+        description: 'Preloved is an online marketplace for second hand clothing. Users can create an account and list their clothing for sale. They can also check out listings from other users and leave comments/ask questions on them. The site aims to provide an accessible way into op-shopping for newcomers, whilst also making it super easy for thrift shopping regulars to find their next favourite fit.',
         img: [
             {img1: './img/preloved-home.jpg'},
             {img1: './img/preloved-responsive.jpg'},
@@ -27,7 +27,7 @@ let projects = [
     {
         id: 3,
         title: 'miStay',
-        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate non voluptates dolore, explicabo adipisci sequi aliquam consequuntur ad nemo excepturi sed nam asperiores eos quam cum eaque quia! Odio, saepe.',
+        description: 'miStay is an accommodation booking application developed for a tourism board aimed at showcasing a region and promoting their tourism partners. Users can search for accommodation and filter based on guests, price and length of stay.',
         img: [
             {img1: './img/mistay-home.png'},
             {img1: './img/mistay-search.png'},
@@ -41,7 +41,7 @@ let projects = [
     {
         id: 4,
         title: 'Libby Beattie Interior Design',
-        description: 'This project is a redesign of an Interior Design Studio website. Given the target audience and desired feel of the site, I undertook UX research to inform how best to achieve this. The site has been designed to reinforce that the studio is classy and reputable, but is also approachable and has tons of character and design expertise. The main focus is on showcasing the amazing work they do, which is why images are always at the forefront of the design.<br><br>This was built as a custom Wordpress theme, including front-end client customisation features for future-proofing and easy updating.',
+        description: 'This project is a re-design of an Interior Design Studio website. Given the target audience and desired feel of the site, I undertook UX research to inform how best to achieve this. The site has been designed to reinforce that the studio is classy and reputable, but is also approachable and has tons of character and design expertise. The main focus is on showcasing the amazing work they do, which is why images are always at the forefront of the design.<br><br>This was built as a custom Wordpress theme, including front-end client customisation features for future-proofing and easy updating.',
         img: [
             {img1: './img/lb-responsive2.png'},
             {img1: './img/lb-home2mockup.png'},
@@ -50,9 +50,68 @@ let projects = [
         ],
         tag: 'Web',
         link: 'https://james.fawcett.yoobeestudent.net/libbybeattie/'
+    },
+    {
+        id: 5,
+        title: 'New Zealand Sea Lion Trust',
+        description: 'This project is a re-design of an existing site. Through UX research, a new look was developed to bring the site up to modern web standards and effectively show visitors the amazing work that the trust do and how they could get involved.',
+        img: [
+            {img1: './img/seaLion-1.jpg'},
+            {img1: './img/seaLion-2.jpg'}
+        ],
+        tag: 'Web',
+    },
+    {
+        id: 6,
+        title: 'UpDate',
+        description: "A no-nonsense news website designed to keep you up to date with the world as quickly and easily as possible.<br><br>The home screen will automatically show you the top new stories from the around the world, organised by most recent first. If you've got more time on your hands, there is a filter function that can dilute your results by country, topic, and language.",
+        img: [
+            {img1: './img/update-mockup.png'},
+            {img1: './img/update-main.png'}
+        ],
+        tag: 'Web',
     }
     
 ];
+
+let tools = [
+    {
+        name: 'HTML',
+        logo: './img/tools/HTML5logo.png',
+    },
+    {
+        name: 'CSS',
+        logo: './img/tools/csslogo.png',
+    },
+    {
+        name: 'Javascript',
+        logo: './img/tools/jslogo.png',
+    },
+    {
+        name: 'JQuery',
+        logo: './img/tools/jquerylogo.png',
+    },
+    {
+        name: 'Sass',
+        logo: './img/tools/sasslogo.png',
+    },
+    {
+        name: 'Bootstrap',
+        logo: './img/tools/bootstraplogo.png',
+    },
+    {
+        name: 'Figma',
+        logo: './img/tools/figmalogo.png',
+    },
+    {
+        name: 'Webflow',
+        logo: './img/tools/webflowlogo.png',
+    },
+    {
+        name: 'Wordpress',
+        logo: './img/tools/wordpresslogo.png',
+    }
+]
 
 // =================================
 // RESPONSIVE NAVBAR
@@ -122,7 +181,11 @@ function generateCards(){
                                 
                                 <h1 class="projectModal__title">${projects[i].title}</h1>
                                 <i class="fa-solid fa-circle-arrow-right"></i>
-                                <p class="projectModal__description">${projects[i].description}<br><br><a href='${projects[i].link}' target="_blank">Link</a></p>
+                                <p class="projectModal__description">${projects[i].description}</p>
+                                <div class="projectModal__link--container">
+                                <button class="projectModal__button"><a class="projectModal__link" href="https://www.behance.net/jamesfawcett" target="_blank"><svg class="behanceLogo" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>Check me out on Behance</a></button>
+                                    
+                                </div>
                                 
                             </div>
                             
