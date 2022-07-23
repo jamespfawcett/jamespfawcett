@@ -118,7 +118,6 @@ let tools = [
 // =================================
 
 function responsiveNav() {
-    console.log('clicked')
     let nav = document.getElementById("responsive-nav");
     nav.classList.toggle('hide');
     nav.classList.toggle('show');
@@ -194,16 +193,9 @@ function generateCards(){
                         `
                     ) 
 
-                    console.log(document.querySelector('.projectModal__link'));
-                    // document.getElementById('projectLink').append(
-                    //     `
-                    //     <a href='${projects[i].link}'>Link</a>
-                    //     `
-                    //    );
-
+                  
 
                     projects[i].img.forEach(element => {
-                        console.log(element.img1);
 
                         let newImage = document.createElement('img');
                         newImage.setAttribute('class', 'projectModal__img');
@@ -344,4 +336,18 @@ var form = document.getElementById("contactForm");
 
       window.addEventListener("scroll", reveal);
     reveal();
+
+    // TOOLS HOVER EFFECT
+
+    $(".skills__logo").mouseenter(function(){
+        let name = this.firstElementChild;
+        name.classList.remove('hide');
+        name.classList.add('show');
+      });
+    $(".skills__logo").mouseleave(function(){
+        let name = this.firstElementChild;
+        name.classList.remove('show');
+        name.classList.add('hide');
+      });
+    
 });
