@@ -75,7 +75,7 @@ let projects = [
 let tools = [
     {
         name: 'HTML',
-        logo: './img/tools/HTML5logo.png',
+        logo: './img/tools/html5logo.png',
     },
     {
         name: 'CSS',
