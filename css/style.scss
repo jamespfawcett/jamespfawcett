@@ -1,12 +1,12 @@
 // IMPORTS
+@import 'var';
+@import 'mixins';
 @import 'nav';
 @import 'hero';
 @import 'projects';
 @import 'about';
 @import 'contact';
 @import 'footer';
-@import 'var';
-@import 'mixins';
 @import 'particles';
 @import 'singleProject';
 @import 'projectModal';
@@ -50,3 +50,26 @@ html{
     transform: translateY(0);
     opacity: 1;
  }
+
+ 
+.arrow_down_div{
+    position: absolute;
+    bottom: 1rem; /* Margin from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    transition: 0.2s;
+}
+.arrow_down_div:hover .arrow_down{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+.arrow_down_div:hover .arrow_down path{
+    transition: 0.2s;
+    fill: #ECB22E;
+}
+.arrow_down path {
+    fill: $pink;
+    transition: 0.2s;
+}
+
+

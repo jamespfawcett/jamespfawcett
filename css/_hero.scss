@@ -1,4 +1,6 @@
 @import 'var';
+@import 'mixins';
+
 
 .hero{
     height: 90vh;
@@ -22,5 +24,3 @@
         font-family: $secondary-font;
     }
 }
-
-

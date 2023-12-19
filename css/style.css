@@ -557,6 +557,8 @@
     color: #1c005c;
     border: 2px solid #ff0062;
     padding: 0.5rem 1rem; }
+  .particles__arrow_down_div {
+    background-color: red; }
 
 .singleProject {
   height: auto;
@@ -769,5 +771,27 @@ html {
 .reveal.active {
   transform: translateY(0);
   opacity: 1; }
+
+.arrow_down_div {
+  position: absolute;
+  bottom: 1rem;
+  /* Margin from the bottom */
+  left: 50%;
+  /* Center horizontally */
+  transform: translateX(-50%);
+  /* Center horizontally */
+  transition: 0.2s; }
+
+.arrow_down_div:hover .arrow_down {
+  transform: scale(1.2);
+  transition: 0.2s; }
+
+.arrow_down_div:hover .arrow_down path {
+  transition: 0.2s;
+  fill: #ECB22E; }
+
+.arrow_down path {
+  fill: #ff0062;
+  transition: 0.2s; }
 
 /*# sourceMappingURL=style.css.map */

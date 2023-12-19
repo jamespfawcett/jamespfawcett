@@ -21,6 +21,9 @@
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <style>
+      
+    </style>
     
 </head>
 <body>
@@ -50,7 +53,13 @@
                 </ul>
             </div>
         </nav>
-        <div id="particles-js"></div>
+        <div id="particles-js">
+            <div class="arrow_down_div">
+                <a href="#projectsHomeContainer">
+                    <svg class="arrow_down" xmlns="http://www.w3.org/2000/svg" height="36" width="36" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                </a>
+            </div>
+        </div>
         <!-- <h1>Background particles</h1> -->
         <div class="particles__text-container">
             <div class="particles__text-wrapper">
@@ -74,6 +83,8 @@
 
                 <div class="line"><span class="particles__line particles__textAlternateMob">Melbourne;</span></div>
             </div>
+
+           
         </div>
         
     </div>    
@@ -114,14 +125,15 @@
                 </div>
             </div>
 
+            
             <div class="skills">
                 <!-- SKILLS -->
                 <div class="skills__title">
                     <h2 class="skills__titleText">KEY SKILLS</h2>
                 </div>
 
-                <div class="skills__logos  reveal">
-                    <div class="skills__logo">
+                <div id="skills-div" class="skills__logos  reveal">
+                    <!-- <div class="skills__logo">
                         <h3 class="skills__name hide">HTML</h3>
                         <img src="./img/tools/html5logo.png" alt="HTML logo">
                     </div>
@@ -157,6 +169,14 @@
                         <h3 class="skills__name hide">WordPress</h3>
                         <img src="./img/tools/wordpresslogo.png" alt="WordPress logo">
                     </div>
+                    <div class="skills__logo">
+                        <h3 class="skills__name hide">SQL</h3>
+                        <img src="./img/tools/sqllogo.png" alt="SQL logo">
+                    </div>
+                    <div class="skills__logo">
+                        <h3 class="skills__name hide">GIT</h3>
+                        <img src="./img/tools/gitlogo.png" alt="GIT logo">
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -244,7 +264,7 @@
 
 
     <!-- SCRIPT -->
+    <script defer src="./js/content.js"></script>
     <script defer src="./js/script.js"></script>
-    <!-- <script src="script.js"></script> -->
 </body>
 </html>
